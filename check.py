@@ -6,7 +6,8 @@ import sys
 web = selenium("https://www.binance.com/fr/support/announcement/nouveaux-listing-de-cryptomonnaies?c=48",10)
 
 cookie_element  = "//button[@id='onetrust-reject-all-handler']"
-web.click_items(cookie_element, True)
+# Cas spécial
+web.click_items(cookie_element, False)
 
 annonce_link = "//div[2]/div[2]/div[2]/section/div/div/div[3]/a/div"
 annonce = web.click_items(annonce_link, False)
