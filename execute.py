@@ -1,8 +1,6 @@
 import numpy as np
 import sys
 import ccxt
-from datetime import datetime
-from datetime import timedelta 
 import json
 
 loaded_bool= np.load("/home/you_server_name/Buy_news_Binance/numpy/bool.npy")
@@ -29,11 +27,12 @@ amount_usdt  =  10
 amount = amount_usdt / current_price
 order = binance.create_order(loaded_paire[0], "market", "buy", amount)
 np.save("numpy/bool.npy", False)
-entry_price = order['price']
-order_size = order['amount']
+#entry_price = order['price']
+#order_size = order['amount']
 
-target_5000 =  entry_price  +  entry_price*50  
-binance.create_order(loaded_paire[0], "limit", "sell", amount, target_5000)
+# creat limit order
+#target_5000 =  entry_price  +  entry_price*50  
+#binance.create_order(loaded_paire[0], "limit", "sell", amount, target_5000)
 
 
 
