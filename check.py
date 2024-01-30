@@ -13,7 +13,7 @@ annonce_link = "//div[2]/div[2]/div[2]/section/div/div/div[3]/a/div"
 annonce = web.click_items(annonce_link, False)
 web.end()
 
-bool = np.load("numpy/bool.npy")
+bool = np.load("/home/you_server_name/Buy_news_Binance/numpy/bool.npy")
 if bool == True:
     print("attente d'une execution de paire")
     sys.exit()
@@ -26,7 +26,7 @@ else:
     print("aucune paire detectée")
     sys.exit()
 
-previous_paire  =  np.load("numpy/paire.npy")
+previous_paire  =  np.load("/home/you_server_name/Buy_news_Binance/numpy/paire.npy")
 if previous_paire == paire:
     print("paire déja executer")
     sys.exit()
