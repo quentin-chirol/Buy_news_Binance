@@ -33,5 +33,5 @@ if previous_paire == paire:
 
 
 data_paire = np.array(paire)
-np.save("numpy/paire.npy", data_paire)
-np.save("numpy/bool.npy", True)
+np.save("/home/you_server_name/Buy_news_Binance/numpy/paire.npy", data_paire)
+np.save("/home/you_server_name/Buy_news_Binance/numpy/bool.npy", True)
