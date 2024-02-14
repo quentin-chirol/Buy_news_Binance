@@ -25,7 +25,7 @@ do
   status=$(echo "$api_response" | jq -r '.status')
 
   # Check if the status is "FILLED"
-  if [ "$status" == "FILLED" ]; then
+  if [ "$status" = "FILLED" ]; then
       echo "Order Filled:"
       BOOL=false
   else
