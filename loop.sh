@@ -22,8 +22,8 @@ do
   # Send the request:
   response=$(curl -X "$API_METHOD" -H "X-MBX-APIKEY: $API_KEY" \
   "$BASE_URL/$API_CALL?$API_PARAMS&signature=$signature")
+  
   status=$(echo "$response" | jq -r '.status')
-
   # Check if the status is "FILLED"
   if [ "$status" = "FILLED" ]; then
       echo "Order Filled:"
