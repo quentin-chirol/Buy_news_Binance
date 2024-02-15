@@ -45,11 +45,12 @@ GIT
   chmod +x loop.sh
   chmoe +x check.py
 ```
-# Lolisation Serveur 
 
-| platforme | Serveur          | time request |
+# Localisation Serveur 
+
+| PLATFORM | SERVEUR | TIME REQUEST |
 |:-|:-:|-:|
-| BINANCE  |   AWS TOKYO    |  ~2ms|
+| BINANCE |  AWS TOKYO  |  ~2ms  |
 
 
 """* * * * python3 /home/your_serveur_name/Buy_news_Binance/execute.py""" <br>
