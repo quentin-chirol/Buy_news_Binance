@@ -2,6 +2,10 @@ from tools.analyse import *
 from tools.web_selenium import *
 import numpy as np
 import sys
+import json
+
+f = open('data.json')
+data = json.load(f)
 
 web = selenium("https://www.binance.com/fr/support/announcement/nouveaux-listing-de-cryptomonnaies?c=48",10)
 
@@ -14,8 +18,7 @@ annonce_link = "//div[2]/div[2]/div[2]/section/div/div/div[3]/a/div"
 annonce = web.click_items(annonce_link, False)
 web.end()
 
-bool = np.load("/home/you_server_name/Buy_news_Binance/numpy/bool.npy")
-if bool == True:
+if data["bool"] == True:
     print("attente d'une execution de paire")
     sys.exit()
 
@@ -27,12 +30,17 @@ else:
     print("aucune paire detectée")
     sys.exit()
 
-previous_paire  =  np.load("/home/you_server_name/Buy_news_Binance/numpy/paire.npy")
-if previous_paire == paire:
+
+if data["paire"] == paire[0]:
     print("paire déja executer")
     sys.exit()
 
+with open('data.json', 'r+') as f:
+    data = json.load(f)
+    data['bool'] = True # add
+    data['paire'] = paire[0] # add
+    f.seek(0)        
+    json.dump(data, f, indent=4)
+    f.truncate()     
 
-data_paire = np.array(paire)
-np.save("/home/you_server_name/Buy_news_Binance/numpy/paire.npy", data_paire)
-np.save("/home/you_server_name/Buy_news_Binance/numpy/bool.npy", True)
+
