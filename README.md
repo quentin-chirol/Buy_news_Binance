@@ -11,3 +11,10 @@ crontab  -e  <br>
 1 <br>
 """* * * * python3 /home/your_serveur_name/Buy_news_Binance/execute.py""" <br>
 """0 * * * python2 /home/your_serveur_name/Buy_news_Binance/check.py""" <br>
+<br>
+<br>
+Error jq <br>
+sudo apt --fix-broken install <br>
+sudo apt update <br>
+sudo apt install libc6-dev libjq1 <br>
+sudo apt install jq build-essential libstdc++-11-dev <br>
