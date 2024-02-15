@@ -5,13 +5,13 @@ SECRET_KEY="x"
 BASE_URL="https://api.binance.com"
 API_METHOD="POST"
 API_CALL="api/v3/order"
-SYMBOL=`jq -r '.paire' data.json`
+SYMBOL=`jq -r '.paire' /path/data.json`
 SIDE="BUY"
 TYPE="MARKET"
 QUANTITY="10"
 
 PARM="symbol=$SYMBOL&side=$SIDE&type=$TYPE&quantity=$QUANTITY"
-BOOL=`jq -r '.bool' data.json`
+BOOL=`jq -r '.bool' /path/data.json`
 
 while $BOOL
 do
@@ -27,7 +27,7 @@ do
   # Check if the status is "FILLED"
   if [ "$status" = "FILLED" ]; then
       echo "Order Filled:"
-      cat data.json | jq '.bool = false' | sponge data.json
+      cat data.json | jq '.bool = false' | sponge /path/data.json
       BOOL=false
   else
       echo "Order not filled"
