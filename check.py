@@ -4,7 +4,7 @@ import numpy as np
 import sys
 import json
 
-f = open('data.json')
+f = open('/path/data.json')
 data = json.load(f)
 
 web = selenium("https://www.binance.com/fr/support/announcement/nouveaux-listing-de-cryptomonnaies?c=48",10)
@@ -35,7 +35,7 @@ if data["paire"] == paire[0]:
     print("paire déja executer")
     sys.exit()
 
-with open('data.json', 'r+') as f:
+with open('/path/data.json', 'r+') as f:
     data = json.load(f)
     data['bool'] = True # add
     data['paire'] = paire[0] # add
