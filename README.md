@@ -20,3 +20,7 @@ sudo apt install libc6-dev libjq1 <br>
 sudo apt install jq build-essential libstdc++-11-dev <br>
 Install sponge <br>
 sudo apt install moreutils
+
+
+Binance Server Location:
+AWS Tokyo
