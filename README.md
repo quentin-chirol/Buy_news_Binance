@@ -45,6 +45,11 @@ GIT
   chmod +x loop.sh
   chmoe +x check.py
 ```
+| Aligné à gauche  | Centré          | Aligné à droite |
+|:-|:-:|-:|
+| Aligné à gauche  |   ce texte        |  Aligné à droite |
+| Aligné à gauche  | est             |   Aligné à droite |
+| Aligné à gauche  | centré          |    Aligné à droite |
 
 """* * * * python3 /home/your_serveur_name/Buy_news_Binance/execute.py""" <br>
 """0 * * * python2 /home/your_serveur_name/Buy_news_Binance/check.py""" <br>
