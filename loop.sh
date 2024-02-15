@@ -5,13 +5,13 @@ SECRET_KEY="x"
 BASE_URL="https://api.binance.com"
 API_METHOD="POST"
 API_CALL="api/v3/order"
-SYMBOL="PYTHUSDT"
+SYMBOL=`jq -r '.paire' data.json`
 SIDE="BUY"
 TYPE="MARKET"
 QUANTITY="10"
 
 PARM="symbol=$SYMBOL&side=$SIDE&type=$TYPE&quantity=$QUANTITY"
-BOOL=true
+BOOL=`jq -r '.bool' data.json`
 
 while $BOOL
 do
