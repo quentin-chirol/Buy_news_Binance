@@ -28,6 +28,7 @@ do
   if [ "$status" = "FILLED" ]; then
       echo "Order Filled:"
       BOOL=false
+      cat data.json | jq '.bool = $v' --arg v "$BOOL" | sponge data.json
   else
       echo "Order not filled"
   fi
