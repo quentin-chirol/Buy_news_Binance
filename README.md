@@ -43,7 +43,7 @@ GIT
   sudo apt git 
   git clone https://github.com/quentin-chirol/Buy_news_Binance
   chmod +x loop.sh
-  chmoe +x check.py
+  chmod +x check.py
 ```
 
 # Localisation Serveur 
