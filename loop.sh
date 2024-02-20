@@ -2,7 +2,7 @@ API_KEY="x"
 SECRET_KEY="x"
 
 # Set up the request:
-BASE_URL="https://api.binance.com"
+BASE_URL="https://api.binance.us"
 API_METHOD="POST"
 API_CALL="api/v3/order"
 SYMBOL=`jq -r '.paire' /path/data.json`
