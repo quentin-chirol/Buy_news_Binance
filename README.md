@@ -50,8 +50,10 @@ GIT
 
 | PLATFORM | SERVEUR | TIME REQUEST |
 |:-|:-:|-:|
-| BINANCE |  AWS TOKYO  |  ~2ms  |
-
+| BINANCE |  AWS OHIO  |  ~0.6ms  |
+| BINANCE |  AWS VIRGINE NORD  |  ~1.2ms  |
+| BINANCE |  AWS CALIFORNIE NORD  |  ~1.25ms  |
+| BINANCE |  AWS OREGON  |  ~6ms  |
 
 """* * * * python3 /home/your_serveur_name/Buy_news_Binance/execute.py""" <br>
 """0 * * * python2 /home/your_serveur_name/Buy_news_Binance/check.py""" <br>
