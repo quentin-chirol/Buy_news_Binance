@@ -15,8 +15,8 @@ GOOGLE
 PYTHON
 
 ```bash
-  sudo apt pip 
-  sudo apt python3 
+  sudo apt install pip 
+  sudo apt install python3 
   pip install selenium webdriver-manager
 ```
 
