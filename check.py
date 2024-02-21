@@ -14,7 +14,7 @@ cookie_element  = "//button[@id='onetrust-reject-all-handler']"
 #True (execution pc) False (serveur)
 web.click_items(cookie_element, False)
 
-annonce_link = "//div[2]/div[2]/div[2]/section/div/div/div[3]/a/div"
+annonce_link = "//div[2]/div[2]/div[2]/section/div/div/div[1]/a/div"
 annonce = web.click_items(annonce_link, False)
 web.end()
 
