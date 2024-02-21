@@ -8,7 +8,7 @@ class analyse:
         tab = []
         for i in range(len(self.txt)):
             if "(" in self.txt[i] and ")" in self.txt[i]:
-                tab.append(re.sub(r"\(|\)", "", self.txt[i])+"/USDT")
+                tab.append(re.sub(r"\(|\)", "", self.txt[i])+"USDT")
         return tab
 
     def check_paire(self,tab):
