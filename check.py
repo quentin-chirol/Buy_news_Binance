@@ -3,6 +3,7 @@ from tools.web_selenium import *
 import numpy as np
 import sys
 import json
+import os
 
 f = open('/path/data.json')
 data = json.load(f)
@@ -43,4 +44,4 @@ with open('/path/data.json', 'r+') as f:
     json.dump(data, f, indent=4)
     f.truncate()     
 
-
+os.system('/path/loop.sh')
