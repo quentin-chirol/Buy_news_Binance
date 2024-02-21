@@ -42,8 +42,8 @@ GIT
 ```bash
   sudo apt git 
   git clone https://github.com/quentin-chirol/Sniper
-  chmod +x loop.sh
-  chmod +x check.py
+  chmod +x /path/loop.sh
+  chmod +x /path/check.py
 ```
 
 # Localisation Serveur 
