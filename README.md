@@ -17,8 +17,6 @@ PYTHON
 ```bash
   sudo apt pip 
   sudo apt python3 
-  pip install numpy 
-  pip install ccxt 
   pip install selenium webdriver-manager
 ```
 
